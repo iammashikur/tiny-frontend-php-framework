@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Exclude the "assets" directory from the rewrite
+  RewriteCond %{REQUEST_URI} !^/assets/
+
+  # Redirect all other requests to index.php
+  RewriteRule ^(.*)$ index.php [L]
+</IfModule>
