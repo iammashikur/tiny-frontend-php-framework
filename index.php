@@ -1,7 +1,6 @@
 <?php
 
 $URI = $_SERVER['REQUEST_URI'];
-
 //get rid of query string
 $URI = explode('?', $URI)[0];
 
